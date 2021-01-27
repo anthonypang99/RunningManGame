@@ -1,0 +1,43 @@
+h1{
+    text-align: center;
+    font-family: Avenir;
+}
+#game{
+    margin: auto;
+    display: block;
+    background: #eee;
+    border: 1px solid black;
+    width: 800px;
+    height: 500px;
+}
+#character{
+    width: 40px;
+    height: 75px;
+    background-color: red;
+    position: relative;
+    top: 425px;
+    left: 100px;
+
+}
+.animate{
+    animation: jump 400ms ;
+}
+#block{
+    width: 30px;
+    height: 30px;
+    background-color: blue;
+    top: 395px;
+    left: 770px;
+    position: relative;
+    animation: block 1s infinite linear;
+}
+@keyframes block {
+    0%{left: 770px}
+    100%{left: 0px}
+}
+@keyframes jump {
+    0%{top: 425px}
+    30%{top: 385px}
+    70%{top: 385px}
+    100%{top: 425px}
+}
